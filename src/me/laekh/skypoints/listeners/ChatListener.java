@@ -22,7 +22,7 @@ public class ChatListener implements Listener {
 			message = message.replaceAll("(?i)" + p.getName(), ChatColor.AQUA + p.getDisplayName() + ChatColor.WHITE);
 		
 		//Prevent people from making that damned pigface
-		if(message.contains("°") && e.getPlayer().hasPermission("skypoints.chat.admin")) {
+		if(message.contains("°") && !e.getPlayer().hasPermission("skypoints.chat.admin")) {
 			e.getPlayer().sendMessage("§4No.");
 			e.setCancelled(true);
 			return;
