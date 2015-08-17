@@ -1,0 +1,10 @@
+name: SkyPoints
+main: me.laekh.skypoints.SkyPoints
+version: 1.0
+author: Laekh
+
+commands:
+ skypoints:
+  description: Skypoints commands
+  usage: /skypoints (command) (args)
+  aliases: [points, pts]
